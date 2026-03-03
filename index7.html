@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Organisation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: black;
+        }
+
+        
+        header {
+            background: #e29e29;
+            color: #fff;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            font-size: 22px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .hero {
+            background: #555;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #1a28c6;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+
+        .btn:hover {
+            background: #000;
+        }
+
+    
+        section {
+            padding: 50px;
+        }
+
+        h2.section-title {
+            margin-bottom: 20px;
+        }
+
+        .flex {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            background: #8db1d5;
+            padding: 20px;
+            flex: 1;
+            min-width: 200px;
+            border: 1px solid #ccc;
+        }
+
+        
+        .about-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .about-image {
+            background: #ccc;
+            height: 200px;
+            flex: 1;
+            min-width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        
+        .contact-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        form {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px;
+            width: 100%;
+            background: #1a28c6;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #000;
+        }
+
+        .contact-info {
+            flex: 2;
+            background: #ddd;
+            padding: 20px;
+            min-height: 200px;
+        }
+
+        
+        footer {
+            background: #e29e29;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>MyOrganisation</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to Our Organisation</h1>
+    <p>We build modern websites using HTML & CSS</p>
+    <a href="#" class="btn">Get Started</a>
+</section>
+
+<section>
+    <h2 class="section-title">About Us</h2>
+    <div class="about-container">
+        <div class="about-image">Image</div>
+        <div class="about-text">
+            <p>We are a professional web development company delivering high-quality projects.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Services</h2>
+    <div class="flex">
+        <div class="box">Web Design</div>
+        <div class="box">Development</div>
+        <div class="box">SEO</div>
+        <div class="box">Marketing</div>
+        <div class="box">Support</div>
+        <div class="box">Consulting</div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Portfolio</h2>
+    <div class="flex">
+        <div class="box">Project 1</div>
+        <div class="box">Project 2</div>
+        <div class="box">Project 3</div>
+        <div class="box">Project 4</div>
+        <div class="box">Project 5</div>
+        <div class="box">Project 6</div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Testimonials</h2>
+    <div class="flex">
+        <div class="box">Client A: Excellent work!</div>
+        <div class="box">Client B: Highly recommended!</div>
+        <div class="box">Client C: Great support!</div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-container">
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea rows="4" placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="contact-info">
+            <p><strong>Address:</strong> Hyderabad, India</p>
+            <p><strong>Phone:</strong> +91 XXXXXXXX</p>
+            <p><strong>Email:</strong> info@company.com</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 MyOrganisation — All Rights Reserved
+</footer>
+
+</body>
+</html>

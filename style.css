@@ -1,0 +1,82 @@
+* {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background-color: greenyellow;
+        }
+
+        
+        .header {
+            background-color: grey;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        
+        .container {
+            width: 85%;
+            margin: 20px auto;
+        }
+
+        
+        .box {
+            background-color: grey;
+            border: 2px solid black;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .box h2 {
+            margin-top: 0;
+        }
+
+        
+        .item {
+            background-color: white;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        
+        .project {
+            background-color: white;
+            border: 1px solid black;
+            padding: 12px;
+            margin-bottom: 15px;
+        }
+
+        .project button {
+            margin-top: 8px;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+
+        
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+        }
+
+        .send-btn {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+
+        
+        .footer {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
